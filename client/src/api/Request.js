@@ -1,0 +1,1 @@
+export const API_URL = 'https://course-api-x9t2.onrender.com/api/courses'; 
