@@ -30,6 +30,12 @@ const Course = () => {
       {loading ? (
         <Loading/>
       ) : (
+        courses.length===0 ?(
+        <>
+        <div style={{marginBottom:"15px"}}>Bütün kurslar silindi</div>
+        <Button variant="contained" style={{marginBottom:"15px"}} onClick={() => handleRefresh()}>Yenilə</Button>
+        </>
+      ):
         <>
         <Button variant="contained" style={{marginBottom:"15px"}} onClick={() => handleRefresh()}>Yenilə</Button>
         <Grid container spacing={2}>
